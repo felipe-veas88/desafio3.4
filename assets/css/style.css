@@ -1,0 +1,167 @@
+/* Estilo del Navbar */
+.NavBar {
+  display: flex;
+  color: whitesmoke;
+  font-size: 2em;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.NavBar_title {
+  margin: 1em;
+  color: black;
+  font-size: 2em;
+}
+
+/* Clase común para botones */
+.btn {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  border: 1px solid black;
+  background: #815f75;
+  color: whitesmoke;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #6e4c62;
+}
+
+/* Estilo del Banner */
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner_img {
+  width: 100%;
+  height: auto;
+}
+
+.banner_title {
+  font-size: 3em;
+  color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Estilos para la Grilla */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Cambiado para mostrar tres tarjetas por fila */
+  gap: 2em;
+}
+
+.card {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 2em;
+  color: black;
+}
+
+.card_img {
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card_titl {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+.card_desc,
+.card_ubic,
+.card_habi,
+.card_cost,
+.card_smok,
+.card_pets {
+  margin: 0.5em 0;
+}
+
+.renta_title,
+.venta_title {
+  font-size: 3em;
+  text-align: center;
+  margin: 1em;
+}
+
+.icon {
+  width: 40px;
+}
+
+.renta_title,
+.venta_title {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 2em;
+  color: black;
+}
+
+/* Estilo del Footer */
+footer {
+  text-align: center;
+  background: #5e5556;
+  color: whitesmoke;
+  padding: 3em;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.logo_red_social {
+  width: 30px;
+  margin: 0 1em;
+}
+
+body {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  margin: 0;
+  background: url(/assets/img/fondo.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Centrar el botón en la pantalla */
+.btn_container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+  .NavBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner_title {
+    font-size: 2em;
+  }
+}
